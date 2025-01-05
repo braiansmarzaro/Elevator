@@ -46,6 +46,18 @@ body {
     flex-direction: row;
     gap: 10px;
   }
+  .controls-panel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #floor-count {
+    width: 50px;
+    text-align: center;
+  }
   
   .elevator {
     height: 30px;

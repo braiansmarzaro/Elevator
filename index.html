@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevator Simulation</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator Simulation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div id="building"></div>
-    <div class="status-panel">
-      <p>Elevator Position: <span id="elevator-position">1</span></p>
-      <p>Elevator State: <span id="elevator-state">Idle</span></p>
+    <div class="controls-panel">
+        <label for="floor-count">Number of Floors (3-7):</label>
+        <input type="number" id="floor-count" min="3" max="7" value="5" />
+        <button id="update-floors">Update Floors</button>
+        </div>
+        <div class="container">
+        <div id="building"></div>
+        <div class="status-panel">
+            <p>Elevator Position: <span id="elevator-position">1</span></p>
+            <p>Elevator State: <span id="elevator-state">Idle</span></p>
+        </div>
+        </div>
+    
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
