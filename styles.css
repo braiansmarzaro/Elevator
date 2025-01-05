@@ -17,39 +17,49 @@ body {
   #building {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 20px;
     border: 1px solid #ccc;
     padding: 10px;
     background-color: #fff;
-    width: 200px;
+    width: 250px;
   }
   
   .floor {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
     width: 100%;
   }
   
   .floor-label {
-    width: 30px;
+    width: 50px;
     text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
   
   .elevator {
-    height: 20px;
-    width: 30px;
+    height: 30px;
+    width: 40px;
     background-color: #007bff;
-    margin: 0 auto;
+    position: absolute;
+    left: 60px;
     border-radius: 5px;
+    transition: transform 1s ease-in-out;
   }
   
   button {
     padding: 5px 10px;
     font-size: 14px;
-    margin: 0 5px;
     cursor: pointer;
   }
   
@@ -60,5 +70,16 @@ body {
   
   .status-panel {
     margin-left: 20px;
+  }
+  
+  .status-panel p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  #elevator-state {
+    display: inline-block;
+    width: 100px; /* Fixed width to prevent layout shifts */
+    text-align: center;
   }
   
